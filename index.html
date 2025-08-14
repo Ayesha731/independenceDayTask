@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
     <style>
       :root {
         --green: #01411c;
@@ -726,7 +728,35 @@
     </div>
 
     <script>
+window.onload = function() {
+    let duration = 5 * 1000; // 5 seconds
+    let end = Date.now() + duration;
+
+    (function frame() {
+        // Fire confetti
+        confetti({
+            particleCount: 20,
+            angle: 60,
+            spread: 100,
+            origin: { x: 0, y: 0.6 },
+            colors: ['#008000', '#FFFFFF']
+        });
+        confetti({
+            particleCount: 20,
+            angle: 120,
+            spread: 100,
+            origin: { x: 1, y: 0.6 },
+            colors: ['#008000', '#FFFFFF']
+        });
+
+        // Keep going until time ends
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+};
       /* ===== Enhanced Clouds System ===== */
+      
       const clouds = document.getElementById('clouds');
       const cctx = clouds.getContext('2d');
       let t0 = performance.now();
