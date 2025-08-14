@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pakistan Flag — by AYESHA 🇵🇰</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --green: #01411c;
+        --white: #ffffff;
+        --night-1: #061428;
+        --night-2: #0c2144;
+        --night-3: #143866;
+        --shadow: rgba(0, 0, 0, 0.28);
+        --pearl: #f7f7f7;
+        --pearl-sh: #bfc6cf;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto,
+          Arial, Helvetica, sans-serif;
+        color: #e6f3ff;
+        background: radial-gradient(
+            1200px 600px at 70% -10%,
+            #1d2e52 0% 25%,
+            transparent 26%
+          ),
+          linear-gradient(#0a1730, #0e1f3f 40%, #063387 100%);
+      }
+
+      /* ===== SKY LAYER ===== */
+      .sky {
+        position: relative;
+        min-height: 100svh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        align-items: center;
+        justify-items: center;
+        padding: 18px 14px 42px;
+      }
+
+      /* Enhanced Stars with more variety */
+      .stars,
+      .stars2,
+      .stars3,
+      .stars4 {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-repeat: repeat;
+        background-size: contain;
+        opacity: 0.9;
+        mix-blend-mode: screen;
+      }
+      .stars {
+        background-image: radial-gradient(
+            2px 2px at 20% 30%,
+            #cbe3ffcc 60%,
+            #0000 61%
+          ),
+          radial-gradient(1.5px 1.5px at 70% 20%, #ffffffcc 60%, #0000 61%),
+          radial-gradient(1.2px 1.2px at 40% 70%, #e6f3ffcc 60%, #0000 61%),
+          radial-gradient(1.6px 1.6px at 85% 55%, #d9ecffcc 60%, #0000 61%),
+          radial-gradient(2.2px 2.2px at 15% 80%, #f0f8ffcc 60%, #0000 61%),
+          radial-gradient(1.8px 1.8px at 90% 25%, #e0f0ffcc 60%, #0000 61%);
+        animation: twinkle 6s ease-in-out infinite;
+      }
+      .stars2 {
+        background-image: radial-gradient(
+            1.2px 1.2px at 10% 60%,
+            #ffffffcc 60%,
+            #0000 61%
+          ),
+          radial-gradient(1.4px 1.4px at 60% 80%, #e6f3ffcc 60%, #0000 61%),
+          radial-gradient(1.6px 1.6px at 35% 25%, #e0f0ffcc 60%, #0000 61%),
+          radial-gradient(2px 2px at 80% 15%, #cbe3ffcc 60%, #0000 61%),
+          radial-gradient(1.3px 1.3px at 25% 45%, #f5faff 60%, #0000 61%);
+        animation: twinkle 9s ease-in-out infinite reverse;
+        opacity: 0.7;
+      }
+      .stars3 {
+        background-image: radial-gradient(
+            1px 1px at 45% 35%,
+            #ffffff 60%,
+            #0000 61%
+          ),
+          radial-gradient(1.1px 1.1px at 75% 65%, #e6f3ff 60%, #0000 61%),
+          radial-gradient(0.8px 0.8px at 5% 15%, #d9ecff 60%, #0000 61%),
+          radial-gradient(1.5px 1.5px at 95% 75%, #ffffff 60%, #0000 61%);
+        animation: twinkle 12s ease-in-out infinite;
+        opacity: 0.5;
+      }
+      .stars4 {
+        background-image: radial-gradient(
+            0.8px 0.8px at 30% 85%,
+            #cbe3ff 60%,
+            #0000 61%
+          ),
+          radial-gradient(1px 1px at 65% 10%, #ffffff 60%, #0000 61%),
+          radial-gradient(0.6px 0.6px at 55% 50%, #e0f0ff 60%, #0000 61%);
+        animation: twinkle 15s ease-in-out infinite reverse;
+        opacity: 0.4;
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        25% {
+          opacity: 1.2;
+        }
+        50% {
+          opacity: 2.2;
+        }
+        75% {
+          opacity: 0.8;
+        }
+      }
+
+      /* Enhanced Moving clouds */
+      #clouds {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+
+      /* Moon enhanced */
+      .moon {
+        position: absolute;
+        right: 12%;
+        top: 8%;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 35% 30%,
+          #fff 0%,
+          #f0f8ff 20%,
+          #dbeeff 50%,
+          #c0d7f2 100%
+        );
+        box-shadow: 0 0 40px rgba(85, 85, 1, 0.18),
+          0 0 120px rgba(150, 200, 255, 0.04);
+        z-index: 1;
+        opacity: 0.95;
+        animation: moonGlow 4s ease-in-out infinite alternate;
+      }
+      .moon::after {
+        content: "";
+        position: absolute;
+        inset: 18% 18% 18% 42%;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.85);
+        transform: rotate(12deg);
+        mix-blend-mode: screen;
+      }
+      @keyframes moonGlow {
+        0% {
+          box-shadow: 0 0 40px rgba(85, 85, 1, 0.18),
+            0 0 120px rgba(150, 200, 255, 0.04);
+        }
+        100% {
+          box-shadow: 0 0 60px rgba(85, 85, 1, 0.25),
+            0 0 180px rgba(150, 200, 255, 0.08);
+        }
+      }
+
+      /* ===== ENHANCED HEADLINE with hover effects ===== */
+      .title {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        line-height: 1.15;
+        cursor: default;
+      }
+      .title h1 {
+        margin: 6px 0 2px;
+        font-size: clamp(18px, 4.6vw, 38px);
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        color: #e9f4ff;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+      .title h1:hover {
+        transform: translateY(-2px) scale(1.02);
+        text-shadow: 0 4px 20px rgba(233, 244, 255, 0.5),
+                     0 0 30px rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+      }
+      .title h1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+      .title h1:hover::before {
+        left: 100%;
+      }
+      .title p {
+        margin: 0;
+        font-size: clamp(12px, 2.6vw, 16px);
+        opacity: 0.9;
+        transition: all 0.3s ease;
+      }
+      .title p:hover {
+        opacity: 1;
+        transform: scale(1.05);
+        text-shadow: 0 2px 10px rgba(233, 244, 255, 0.3);
+      }
+
+      /* Enhanced Country name with animated gradient */
+      .country {
+        font-weight: 800;
+        font-size: clamp(20px, 6vw, 48px);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        background: linear-gradient(
+          45deg,
+          #0b612b,
+          #0bea59,
+          #0b612b,
+          #0bea59
+        );
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 0 #ffffff30;
+        animation: gradientShift 3s ease-in-out infinite;
+        transition: all 0.3s ease;
+        cursor: default;
+      }
+      .country:hover {
+        transform: scale(1.1) rotateY(10deg);
+        filter: drop-shadow(0 4px 20px rgba(11, 234, 89, 0.4));
+      }
+      @keyframes gradientShift {
+        0%, 100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      /* ===== SCENE WRAPPER ===== */
+      .scene {
+        margin-top: 10px;
+        position: relative;
+        z-index: 2;
+        width: min(96vw, 980px);
+        aspect-ratio: 16/9;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 14px 44px var(--shadow);
+        background: linear-gradient(#0e2042 0%, #0b1831 70%, #081226 100%);
+      }
+
+      /* ===== FLAG with repositioned star ===== */
+      .flag-wrap {
+        position: absolute;
+        left: 50%;
+        top: 56%;
+        transform: translate(-50%, -55%);
+        transform-origin: center;
+        animation: sway 5.5s ease-in-out infinite;
+      }
+      @keyframes sway {
+        0%,
+        100% {
+          transform: translate(-50%, -55%) rotate(-2deg);
+        }
+        50% {
+          transform: translate(-50%, -55%) rotate(2deg);
+        }
+      }
+
+      .flag {
+        position: relative;
+        width: min(72vw, 720px);
+        aspect-ratio: 3/2;
+        border-radius: 12px;
+        box-shadow: 0 18px 40px var(--shadow);
+        overflow: hidden;
+        filter: url(#flagWave) drop-shadow(0 10px 22px rgba(0, 0, 0, 0.35));
+      }
+      .flag::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 25%;
+        background: var(--white);
+      }
+      .flag .field {
+        position: absolute;
+        inset: 0 0 0 25%;
+        background: linear-gradient(
+          145deg,
+          #0b5e2e 0%,
+          var(--green) 35%,
+          #0a5a2c 60%,
+          #0f7d3f 100%
+        );
+      }
+
+      /* Enhanced cloth texture and shine */
+      .flag .field::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          #0000 0 6px,
+          #00000014 6px 12px
+        );
+        opacity: 0.28;
+        mix-blend-mode: multiply;
+        animation: cloth 2.8s linear infinite;
+      }
+      .flag .field::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          115deg,
+          #ffffff00 0%,
+          #ffffff22 45%,
+          #ffffff66 50%,
+          #ffffff22 55%,
+          #ffffff00 70%
+        );
+        mix-blend-mode: soft-light;
+        filter: blur(0.3px);
+        transform: translateX(-120%);
+        animation: shineMove 3.6s ease-in-out infinite;
+      }
+      @keyframes cloth {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 24px;
+        }
+      }
+      @keyframes shineMove {
+        0% {
+          transform: translateX(-120%);
+        }
+        60% {
+          transform: translateX(120%);
+        }
+        100% {
+          transform: translateX(120%);
+        }
+      }
+
+      /* Repositioned Moon & Star */
+      .crescent {
+        position: absolute;
+        left: 46.5%;
+        top: 33%;
+        width: 28%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: var(--white);
+        box-shadow: 0 0 22px #f8f3f366, 0 0 8px #dff;
+      }
+      .crescent::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: translate(18%, -4%) scale(0.84);
+        background: linear-gradient(145deg, #0b5e2e, var(--green));
+        border-radius: 50%;
+      }
+      /* Repositioned star - moved down */
+      .star {
+        position: absolute;
+        left: 63%;
+        top: 45%; /* Moved down from 34% */
+        width: 10.5%;
+        aspect-ratio: 1/1;
+        background: var(--white);
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 56%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 56%,
+          2% 35%,
+          39% 35%
+        );
+        transform: rotate(18deg);
+        box-shadow: 0 0 18px #ffffff66;
+      }
+      .glow {
+        animation: glowPulse 2.4s ease-in-out infinite;
+      }
+      @keyframes glowPulse {
+        0%,
+        100% {
+          filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 8px #aef3);
+        }
+        50% {
+          filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 16px #cfff);
+        }
+      }
+
+      /* ===== ENHANCED PIGEONS ===== */
+      .pigeon {
+        position: absolute;
+        width: 160px;
+        height: auto;
+        animation: bob 2.8s ease-in-out infinite;
+        filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
+        z-index: 4;
+      }
+      .pigeon svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .pigeon .wing {
+        transform-origin: 54px 52px;
+        animation: flap 0.7s ease-in-out infinite;
+      }
+      .pigeon .wing.right {
+        transform-origin: 92px 52px;
+        animation-delay: -0.35s;
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-14px);
+        }
+      }
+      @keyframes flap {
+        0%,
+        100% {
+          transform: rotate(10deg);
+        }
+        50% {
+          transform: rotate(-18deg);
+        }
+      }
+
+      .pg-tl {
+        left: calc(50% - 420px);
+        top: calc(46% - 250px);
+      }
+      .pg-tr {
+        left: calc(50% + 260px);
+        top: calc(46% - 250px);
+      }
+      .pg-bl {
+        left: calc(50% - 420px);
+        top: calc(46% + 140px);
+      }
+      .pg-br {
+        left: calc(50% + 260px);
+        top: calc(46% + 140px);
+      }
+
+      /* ===== ROPES ===== */
+      #ropes {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        pointer-events: none;
+      }
+
+      /* ===== ENHANCED CONTROLS ===== */
+      .controls {
+        position: absolute;
+        left: 18px;
+        bottom: 50px;
+        z-index: 6;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .controls button {
+        cursor: pointer;
+        border: 0;
+        padding: 12px 18px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #0c8a3d, #0f7d3f);
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        box-shadow: 0 8px 18px var(--shadow);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+      .controls button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+      .controls button:hover {
+        background: linear-gradient(135deg, #0a7534, #0d6b35);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(12, 138, 61, 0.4);
+      }
+      .controls button:hover::before {
+        left: 100%;
+      }
+      .controls button:active {
+        transform: translateY(0);
+      }
+      .controls button.playing {
+        background: linear-gradient(135deg, #e74c3c, #c0392b);
+      }
+      .controls button.muted {
+        background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+      }
+
+      /* Enhanced SharkStack badge */
+      .badge {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        z-index: 5;
+        padding: 12px 16px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #026e2f, #0f6d36);
+        color: #eafff1;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35), inset 0 0 0 1px #9be6b4;
+        animation: badgeGlow 3s ease-in-out infinite;
+        transition: transform 0.3s ease;
+      }
+      .badge:hover {
+        transform: scale(1.05) rotateY(10deg);
+      }
+      .badge small {
+        display: block;
+        font-weight: 600;
+        opacity: 0.85;
+        letter-spacing: 0.2px;
+      }
+      @keyframes badgeGlow {
+        0%,
+        100% {
+          box-shadow: 0 10px 22px rgba(35, 176, 35, 0.35), 0 0 12px #06ff8b44;
+        }
+        50% {
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35), 0 0 22px #08fb8977;
+        }
+      }
+
+      /* Visually hidden for a11y */
+      .vh {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+      }
+
+      /* Audio status indicator */
+      .audio-status {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 12px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .audio-status.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SVG filter for flag wave effect -->
+    <svg class="vh" width="0" height="0" aria-hidden="true">
+      <filter id="flagWave">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.005 0.012"
+          numOctaves="2"
+          seed="3"
+        >
+          <animate
+            attributeName="baseFrequency"
+            dur="7s"
+            values="0.004 0.01;0.008 0.02;0.004 0.01"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          in="SourceGraphic"
+          scale="18"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
+      </filter>
+    </svg>
+
+    <div
+      class="sky"
+      role="img"
+      aria-label="Night sky with stars and clouds. Realistic pigeons carry the Pakistan flag with pearl ropes."
+    >
+      <canvas id="clouds"></canvas>
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+      <div class="stars4"></div>
+      <div class="moon" aria-hidden="true"></div>
+
+      <!-- Audio status indicator -->
+      <div class="audio-status" id="audioStatus">Audio Ready</div>
+
+      <div class="title">
+        <h1>Happy Independence Day — 14 August</h1>
+        <p>Long live</p>
+        <span class="country">PAKISTAN</span>
+      </div>
+
+      <div class="scene">
+        <!-- Flag with repositioned star -->
+        <div class="flag-wrap" id="flagWrap">
+          <div class="flag" id="flag">
+            <div class="field"></div>
+            <span class="crescent glow"></span>
+            <span class="star glow"></span>
+          </div>
+        </div>
+
+        <!-- Ropes canvas -->
+        <canvas id="ropes"></canvas>
+
+        <!-- Pigeons -->
+        <div class="pigeon pg-tl" data-beak-pct="88,42">
+          <svg viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="pgBody" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e9eef3" />
+                <stop offset="100%" stop-color="#cfd8df" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="80" cy="70" rx="34" ry="24" fill="url(#pgBody)" />
+            <circle cx="110" cy="56" r="12" fill="url(#pgBody)" />
+            <circle cx="114" cy="54" r="2.2" fill="#1d1d1d" />
+            <polygon points="118,56 136,60 118,64" fill="#ffcc66" />
+            <g class="wing">
+              <path d="M56 72 C28 52, 16 36, 34 30 C54 34, 64 50, 68 62 Z" fill="#f4f8fb" />
+            </g>
+            <g class="wing right">
+              <path d="M68 76 C42 86, 20 86, 34 78 C48 70, 60 66, 82 64 Z" fill="#ffffff" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Enhanced Controls for Anthem -->
+      <div class="controls">
+        <button id="playPauseBtn">▶ Play Anthem</button>
+        <button id="muteUnmuteBtn">🔊 Sound</button>
+      </div>
+
+      <!-- Audio element -->
+      <audio id="anthem" loop>
+        <source src="pakistan.mp3" type="audio/mpeg">
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- Enhanced SharkStack badge with your info -->
+    <div class="badge" id="badge">
+      <small>Presented by</small>
+      SHARKSTACK<br>
+      <small>Ayesha Manzoor</small>
+    </div>
+
+    <script>
+      /* ===== Enhanced Clouds System ===== */
+      const clouds = document.getElementById('clouds');
+      const cctx = clouds.getContext('2d');
+      let t0 = performance.now();
+      
+      // Enhanced cloud layers with better movement
+      const layers = [
+        { count: 12, speed: 0.15, amp: 8, size:[80,140], alpha:0.7, yRange:[0.1, 0.4] },
+        { count: 8, speed: 0.25, amp: 12, size:[100,180], alpha:0.6, yRange:[0.2, 0.5] },
+        { count: 6, speed: 0.35, amp: 16, size:[140,220], alpha:0.5, yRange:[0.3, 0.6] },
+        { count: 4, speed: 0.45, amp: 20, size:[180,280], alpha:0.4, yRange:[0.1, 0.3] }
+      ];
+      
+      const puffs = [];
+      
+      // Create cloud puffs
+      layers.forEach((L, li) => {
+        for(let i = 0; i < L.count; i++) {
+          puffs.push({
+            layer: li,
+            x: Math.random() * window.innerWidth,
+            y: L.yRange[0] * window.innerHeight + Math.random() * (L.yRange[1] - L.yRange[0]) * window.innerHeight,
+            r: L.size[0] + Math.random() * (L.size[1] - L.size[0]),
+            phase: Math.random() * Math.PI * 2,
+            opacity: L.alpha * (0.8 + Math.random() * 0.4)
+          });
+        }
+      });
+
+      function drawClouds() {
+        const now = performance.now();
+        const dt = (now - t0) / 1000;
+        t0 = now;
+        const W = clouds.width, H = clouds.height;
+        
+        cctx.clearRect(0, 0, W, H);
+        
+        puffs.forEach(p => {
+          const L = layers[p.layer];
+          // Move clouds horizontally
+          p.x += L.speed * (W / 1600) * (60 * dt);
+          
+          // Reset cloud position when it goes off screen
+          if (p.x - p.r > W) {
+            p.x = -p.r;
+            p.y = L.yRange[0] * H + Math.random() * (L.yRange[1] - L.yRange[0]) * H;
+          }
+          
+          // Add floating motion
+          p.phase += 0.6 * dt;
+          const yy = p.y + Math.sin(p.phase) * L.amp;
+          
+          // Draw cloud with gradient
+          const g = cctx.createRadialGradient(p.x, yy, p.r * 0.2, p.x, yy, p.r);
+          g.addColorStop(0, `rgba(255,255,255,${0.3 * p.opacity})`);
+          g.addColorStop(0.6, `rgba(240,248,255,${0.2 * p.opacity})`);
+          g.addColorStop(1, 'rgba(255,255,255,0)');
+          
+          cctx.fillStyle = g;
+          cctx.beginPath();
+          cctx.arc(p.x, yy, p.r, 0, Math.PI * 2);
+          cctx.fill();
+        });
+        
+        requestAnimationFrame(drawClouds);
+      }
+
+      /* ===== Ropes System ===== */
+      const ropes = document.getElementById('ropes');
+      const rctx = ropes.getContext('2d');
+      const flagEl = document.getElementById('flag');
+
+      function sizeCanvases() {
+        clouds.width = window.innerWidth;
+        clouds.height = window.innerHeight;
+        ropes.width = sceneRect().width;
+        ropes.height = sceneRect().height;
+        ropes.style.left = sceneRect().left + 'px';
+        ropes.style.top = sceneRect().top + 'px';
+      }
+
+      function sceneRect() {
+        return document.querySelector('.scene').getBoundingClientRect();
+      }
+
+      function getBeakPos(el) {
+        const rect = el.getBoundingClientRect();
+        const [xp, yp] = (el.dataset.beakPct || '85,42').split(',').map(parseFloat);
+        const mirrored = el.dataset.mirror === 'true';
+        const xPerc = mirrored ? (100 - xp) : xp;
+        const x = rect.left + window.scrollX + rect.width * (xPerc / 100);
+        const y = rect.top + window.scrollY + rect.height * (yp / 100);
+        return { x, y };
+      }
+
+      function getFlagCorners() {
+        const rect = flagEl.getBoundingClientRect();
+        const tl = { x: rect.left + window.scrollX, y: rect.top + window.scrollY };
+        const tr = { x: rect.right + window.scrollX, y: rect.top + window.scrollY };
+        const bl = { x: rect.left + window.scrollX, y: rect.bottom + window.scrollY };
+        const br = { x: rect.right + window.scrollX, y: rect.bottom + window.scrollY };
+        return { tl, tr, bl, br };
+      }
+
+      function pearl(x, y, r) {
+        const g = rctx.createRadialGradient(x, y, r * 0.15, x, y, r);
+        g.addColorStop(0, '#ffffff');
+        g.addColorStop(0.6, '#f4f6fb');
+        g.addColorStop(1, '#cdd5e2');
+        rctx.fillStyle = g;
+        rctx.beginPath();
+        rctx.arc(x, y, r, 0, Math.PI * 2);
+        rctx.fill();
+        rctx.strokeStyle = '#9fb0c2';
+        rctx.lineWidth = 0.6;
+        rctx.stroke();
+      }
+
+      function drawPearlRope(pA, pB) {
+        const mid = { x: (pA.x + pB.x) / 2, y: (pA.y + pB.y) / 2 + 20 };
+        const len = Math.hypot(pA.x - pB.x, pA.y - pB.y);
+        const step = 12;
+        for (let t = 0; t <= 1; t += step / len) {
+          const x = (1 - t) * (1 - t) * pA.x + 2 * (1 - t) * t * mid.x + t * t * pB.x;
+          const y = (1 - t) * (1 - t) * pA.y + 2 * (1 - t) * t * mid.y + t * t * pB.y;
+          pearl(x - sceneRect().left, y - sceneRect().top, 3.6);
+        }
+      }
+
+      function paintRopes() {
+        rctx.clearRect(0, 0, ropes.width, ropes.height);
+        const { tl, tr, bl, br } = getFlagCorners();
+        const pg = {
+          tl: getBeakPos(document.querySelector('.pg-tl')),
+          tr: getBeakPos(document.querySelector('.pg-tr')),
+          bl: getBeakPos(document.querySelector('.pg-bl')),
+          br: getBeakPos(document.querySelector('.pg-br')),
+        };
+        drawPearlRope(pg.tl, tl);
+        drawPearlRope(pg.tr, tr);
+        drawPearlRope(pg.bl, bl);
+        drawPearlRope(pg.br, br);
+        requestAnimationFrame(paintRopes);
+      }
+
+      /* ===== Randomize pigeon animations ===== */
+      function randomizeFlaps() {
+        document.querySelectorAll('.pigeon').forEach((p, i) => {
+          const wing = p.querySelector('.wing');
+          const dur = 0.6 + Math.random() * 0.5;
+          wing.style.animationDuration = dur + 's';
+          const right = p.querySelector('.wing.right');
+          if (right) right.style.animationDuration = dur + 's';
+          const bobDur = 2.4 + Math.random() * 1.2;
+          p.style.animationDuration = bobDur + 's';
+        });
+      }
+
+      /* ===== Enhanced Audio Controls ===== */
+      const anthem = document.getElementById('anthem');
+      const playPauseBtn = document.getElementById('playPauseBtn');
+      const muteUnmuteBtn = document.getElementById('muteUnmuteBtn');
+      const audioStatus = document.getElementById('audioStatus');
+
+      let isPlaying = false;
+      let isMuted = false;
+
+      // Set initial volume
+      anthem.volume = 0.7;
+
+      function showStatus(message) {
+        audioStatus.textContent = message;
+        audioStatus.classList.add('show');
+        setTimeout(() => {
+          audioStatus.classList.remove('show');
+        }, 2000);
+      }
+
+      function updatePlayButton() {
+        if (isPlaying) {
+          playPauseBtn.textContent = '⏸ Pause Anthem';
+          playPauseBtn.classList.add('playing');
+        } else {
+          playPauseBtn.textContent = '▶ Play Anthem';
+          playPauseBtn.classList.remove('playing');
+        }
+      }
+
+      function updateMuteButton() {
+        if (isMuted) {
+          muteUnmuteBtn.textContent = '🔇 Unmute';
+          muteUnmuteBtn.classList.add('muted');
+        } else {
+          muteUnmuteBtn.textContent = '🔊 Sound';
+          muteUnmuteBtn.classList.remove('muted');
+        }
+      }
+
+      playPauseBtn.addEventListener('click', async () => {
+        try {
+          if (isPlaying) {
+            anthem.pause();
+            isPlaying = false;
+            showStatus('Anthem Paused');
+          } else {
+            await anthem.play();
+            isPlaying = true;
+            showStatus('Playing National Anthem');
+          }
+          updatePlayButton();
+        } catch (error) {
+          console.log('Audio play failed:', error);
+          showStatus('Audio not available');
+        }
+      });
+
+      muteUnmuteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        anthem.muted = isMuted;
+        updateMuteButton();
+        showStatus(isMuted ? 'Audio Muted' : 'Audio Unmuted');
+      });
+
+      // Audio event listeners
+      anthem.addEventListener('play', () => {
+        isPlaying = true;
+        updatePlayButton();
+      });
+
+      anthem.addEventListener('pause', () => {
+        isPlaying = false;
+        updatePlayButton();
+      });
+
+      anthem.addEventListener('ended', () => {
+        isPlaying = false;
+        updatePlayButton();
+      });
+
+      // Try to enable audio on first user interaction
+      document.addEventListener('click', () => {
+        if (anthem.paused && !isPlaying) {
+          anthem.play().catch(() => {});
+        }
+      }, { once: true });
+
+      /* ===== Initialize Everything ===== */
+      sizeCanvases();
+      randomizeFlaps();
+      drawClouds();
+      paintRopes();
+      
+      window.addEventListener('resize', () => {
+        sizeCanvases();
+        paintRopes();
+      });
+
+      // Show initial status
+      showStatus('Click Play to hear National Anthem');
+    </script> 86, 20 86, 34 78 C48 70, 60 66, 82 64 Z" fill="#ffffff" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="pigeon pg-tr" data-beak-pct="12,42" data-mirror="true">
+          <svg viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="transform: scaleX(-1)">
+            <defs>
+              <linearGradient id="pgBody2" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e9eef3" />
+                <stop offset="100%" stop-color="#cfd8df" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="80" cy="70" rx="34" ry="24" fill="url(#pgBody2)" />
+            <circle cx="110" cy="56" r="12" fill="url(#pgBody2)" />
+            <circle cx="114" cy="54" r="2.2" fill="#1d1d1d" />
+            <polygon points="118,56 136,60 118,64" fill="#ffcc66" />
+            <g class="wing">
+              <path d="M56 72 C28 52, 16 36, 34 30 C54 34, 64 50, 68 62 Z" fill="#f4f8fb" />
+            </g>
+            <g class="wing right">
+              <path d="M68 76 C42 86, 20 86, 34 78 C48 70, 60 66, 82 64 Z" fill="#ffffff" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="pigeon pg-bl" data-beak-pct="88,38">
+          <svg viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="pgBody3" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e9eef3" />
+                <stop offset="100%" stop-color="#cfd8df" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="80" cy="70" rx="34" ry="24" fill="url(#pgBody3)" />
+            <circle cx="110" cy="56" r="12" fill="url(#pgBody3)" />
+            <circle cx="114" cy="54" r="2.2" fill="#1d1d1d" />
+            <polygon points="118,56 136,60 118,64" fill="#ffcc66" />
+            <g class="wing">
+              <path d="M56 72 C28 52, 16 36, 34 30 C54 34, 64 50, 68 62 Z" fill="#f4f8fb" />
+            </g>
+            <g class="wing right">
+              <path d="M68 76 C42 86, 20 86, 34 78 C48 70, 60 66, 82 64 Z" fill="#ffffff" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="pigeon pg-br" data-beak-pct="12,38" data-mirror="true">
+          <svg viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="transform: scaleX(-1)">
+            <defs>
+              <linearGradient id="pgBody4" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e9eef3" />
+                <stop offset="100%" stop-color="#cfd8df" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="80" cy="70" rx="34" ry="24" fill="url(#pgBody4)" />
+            <circle cx="110" cy="56" r="12" fill="url(#pgBody4)" />
+            <circle cx="114" cy="54" r="2.2" fill="#1d1d1d" />
+            <polygon points="118,56 136,60 118,64" fill="#ffcc66" />
+            <g class="wing">
+              <path d="M56 72 C28 52, 16 36, 34 30 C54 34, 64 50, 68 62 Z" fill="#f4f8fb" />
+            </g>
+            <g class="wing right">
+              <path d="M68 76 C42
